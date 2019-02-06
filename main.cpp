@@ -7,8 +7,7 @@ using namespace std;
 
 double finalAmount (double g, double w)
 {
-  double p= (g/w)*(6.02*pow(10, 23));
-  return p;
+  return p= (g/w)*(6.02*pow(10, 23));
 }
 
 int main()
@@ -26,12 +25,11 @@ int main()
         cout << "The amount of particles is " << finalAmount(amount, amu) << " Particles" << endl;
         cout << "Again?\n";
         cin >> tempChar;
-    }
-
         if( tempChar == 'N' || tempChar == 'n' || tempChar== 'no' || tempChar == 'No' || tempChar == 'NO')
         {
-        finished = true;
+          finished = true;
         }
+    }
 
     return 0;
 
